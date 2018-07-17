@@ -16,10 +16,58 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+#pragma mark - 3DTouch
+    if (isSupportForceTouch) {
+        [self shortcutItems];
+    }
     // Override point for customization after application launch.
     return YES;
 }
 
+- (void)shortcutItems {
+    UIApplicationShortcutIcon *firstIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"refresh"];//自定义
+    UIApplicationShortcutIcon *secondIcon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeLove];//系统提供一部分icon
+    UIApplicationShortcutItem *firstItem = [[UIApplicationShortcutItem alloc] initWithType:@"identifier" localizedTitle:@"firstItem" localizedSubtitle:@"firstItem subtitle" icon:firstIcon userInfo:@{@"dic":@"userInfo"}];
+    UIApplicationShortcutItem *secondItem = [[UIApplicationShortcutItem alloc] initWithType:@"identifierSecond" localizedTitle:@"secondItem" localizedSubtitle:@"secondItem subtitle" icon:secondIcon userInfo:@{}];
+    [[UIApplication sharedApplication] setShortcutItems:@[firstItem, secondItem]];
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    NSString *type = shortcutItem.type;//唯一标识符
+    NSDictionary *dic = shortcutItem.userInfo;
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:type message:dic?dic[@"dic"]:@"" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [alert addAction:cancelAction];
+    [[[UIApplication sharedApplication].delegate.window rootViewController] presentViewController:alert animated:YES completion:nil];
+}
+
+#pragma mark - SpotLight
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler {
+    if ([userActivity.activityType isEqualToString:@"com.apple.corespotlightitem"]) {
+        NSString *identifier = [userActivity.userInfo objectForKey:@"kCSSearchableItemActivityIdentifier"];
+        if ([identifier isEqualToString:@"3DTouch"]) {
+            UIViewController *vc = [[WHMediator sharedInstance] WHComponentForceTouch_fetchViewController:nil];
+            if (vc) {
+                [[WHUtils currentVisibleViewController].navigationController pushViewController:vc animated:YES];
+            }
+        }
+    }
+    return NO;
+}
+
+#pragma mark - todayWidget
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    if ([[url absoluteString] compare:@"Example"]) {
+        UIViewController *vc = [[WHMediator sharedInstance] WHComponentForceTouch_fetchViewController:nil];
+        if (vc) {
+            [[WHUtils currentVisibleViewController].navigationController pushViewController:vc animated:YES];
+        }
+        return YES;
+    }
+    return NO;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
