@@ -15,5 +15,6 @@
 - (UIViewController *)WHComponentOther_fetchLongImageViewController:(NSDictionary *)params;
 - (UIViewController *)WHComponentOther_fetchPreViewLongImageViewController:(NSDictionary *)params;
 - (UIViewController *)WHComponentOther_fetchWebViewViewController:(NSDictionary *)params;
+- (UIViewController *)WHComponentOther_fetchStockViewController:(NSDictionary *)params;
 
 @end

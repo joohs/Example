@@ -45,6 +45,9 @@
 
 - (UIViewController *)Action_Stock:(NSDictionary *)params {
     WHStockViewController *vc = [[WHStockViewController alloc] init];
+    if ([params objectForKey:@"code"]) {
+        vc.code = params[@"code"];
+    }
     return vc;
 }
 

@@ -7,7 +7,19 @@
 //
 
 #import "WHStockViewController.h"
+#import "WHStockViewModel.h"
+
+@interface WHStockViewController ()
+
+@property (nonatomic, strong) WHStockViewModel *viewModel;
+
+@end
 
 @implementation WHStockViewController
+
+- (void)viewDidLoad {
+    self.viewModel = [[WHStockViewModel alloc] init];
+    [self.viewModel requestDataWithCode:self.code];
+}
 
 @end

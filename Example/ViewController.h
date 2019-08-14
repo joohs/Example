@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, Times) {
+    TimesWithOne,
+    TimesWithTwo
+};
+
 @interface ViewController : UIViewController
 
+@property (nonatomic, assign) Times times;
 
 @end
 

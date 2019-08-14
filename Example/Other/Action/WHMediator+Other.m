@@ -50,4 +50,12 @@
     return nil;
 }
 
+- (UIViewController *)WHComponentOther_fetchStockViewController:(NSDictionary *)params {
+    UIViewController *vc = [self performTarget:@"Other" action:@"Stock" params:params shouldCacheTarget:self];
+    if ([vc isKindOfClass:[UIViewController class]]) {
+        return vc;
+    }
+    return nil;
+}
+
 @end

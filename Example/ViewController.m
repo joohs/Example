@@ -33,9 +33,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self example];
     self.title = @"模块";
     // Do any additional setup after loading the view, typically from a nib.
-    self.dataArray = @[@"3DTouch", @"SpotLight", @"图片流", @"App Store评分", @"长图生成", @"Json文件重新获取"];
+    self.dataArray = @[@"3DTouch", @"SpotLight", @"图片流", @"App Store评分", @"长图生成", @"获取指定股票实时动态"];
     [self registerForPreviewingWithDelegate:self sourceView:self.view];
     // Do any additional setup after loading the view.
     self.listTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreen_Width, kScreen_Height_All-kNavigationBarHeight) style:UITableViewStyleGrouped];
@@ -94,6 +95,11 @@
             vc = [[WHMediator sharedInstance] WHComponentOther_fetchLongImageViewController:nil];
         }
             break;
+        case 5:
+        {
+            vc = [[WHMediator sharedInstance] WHComponentOther_fetchStockViewController:nil];
+        }
+            break;
         default:
             break;
     }
@@ -118,6 +124,22 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (void)example {
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end

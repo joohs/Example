@@ -27,6 +27,7 @@
 		FC5823A220DA4CC600DE44FF /* WHBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5823A120DA4CC600DE44FF /* WHBaseModel.m */; };
 		FC5823A520DA4D0D00DE44FF /* WHLongImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5823A420DA4D0D00DE44FF /* WHLongImage.m */; };
 		FC5DC71220FDC6AF0055BA63 /* WHStockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5DC71120FDC6AF0055BA63 /* WHStockViewController.m */; };
+		FC5DC71520FDC9D70055BA63 /* WHStockViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5DC71420FDC9D70055BA63 /* WHStockViewModel.m */; };
 		FC632CE620BD4DE600AB1795 /* WHForceTouchSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC632CE520BD4DE600AB1795 /* WHForceTouchSectionController.m */; };
 		FC632CE920BD4E0500AB1795 /* WHForceTouchCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC632CE820BD4E0500AB1795 /* WHForceTouchCollectionViewCell.m */; };
 		FC632CEC20BD514900AB1795 /* WHForceTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = FC632CEB20BD514900AB1795 /* WHForceTouch.m */; };
@@ -43,6 +44,7 @@
 		FC76AEB920C7778D00CB169A /* WHStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC76AEB820C7778D00CB169A /* WHStoreViewController.m */; };
 		FC76AEBE20C777FE00CB169A /* Target_Other.m in Sources */ = {isa = PBXBuildFile; fileRef = FC76AEBD20C777FE00CB169A /* Target_Other.m */; };
 		FC76AEC120C7786700CB169A /* WHMediator+Other.m in Sources */ = {isa = PBXBuildFile; fileRef = FC76AEC020C7786700CB169A /* WHMediator+Other.m */; };
+		FC7F662022EFD72A00D60BCD /* UIButton+Edge.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7F661F22EFD72A00D60BCD /* UIButton+Edge.m */; };
 		FC8C706E20D20458002F7672 /* WHUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8C706D20D20458002F7672 /* WHUtils.m */; };
 		FC8C707520D212EB002F7672 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8C707420D212EB002F7672 /* NotificationCenter.framework */; };
 		FC8C707920D212EB002F7672 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8C707820D212EB002F7672 /* TodayViewController.m */; };
@@ -142,6 +144,8 @@
 		FC5823A420DA4D0D00DE44FF /* WHLongImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHLongImage.m; sourceTree = "<group>"; };
 		FC5DC71020FDC6AF0055BA63 /* WHStockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHStockViewController.h; sourceTree = "<group>"; };
 		FC5DC71120FDC6AF0055BA63 /* WHStockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHStockViewController.m; sourceTree = "<group>"; };
+		FC5DC71320FDC9D70055BA63 /* WHStockViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHStockViewModel.h; sourceTree = "<group>"; };
+		FC5DC71420FDC9D70055BA63 /* WHStockViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHStockViewModel.m; sourceTree = "<group>"; };
 		FC632CE220BCE37C00AB1795 /* Example.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Example.pch; sourceTree = "<group>"; };
 		FC632CE320BCE4CD00AB1795 /* macroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macroDefinition.h; sourceTree = "<group>"; };
 		FC632CE420BD4DE600AB1795 /* WHForceTouchSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHForceTouchSectionController.h; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 		FC76AEBD20C777FE00CB169A /* Target_Other.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Other.m; sourceTree = "<group>"; };
 		FC76AEBF20C7786700CB169A /* WHMediator+Other.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WHMediator+Other.h"; sourceTree = "<group>"; };
 		FC76AEC020C7786700CB169A /* WHMediator+Other.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WHMediator+Other.m"; sourceTree = "<group>"; };
+		FC7F661E22EFD72A00D60BCD /* UIButton+Edge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Edge.h"; sourceTree = "<group>"; };
+		FC7F661F22EFD72A00D60BCD /* UIButton+Edge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Edge.m"; sourceTree = "<group>"; };
 		FC8C706C20D20458002F7672 /* WHUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHUtils.h; sourceTree = "<group>"; };
 		FC8C706D20D20458002F7672 /* WHUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHUtils.m; sourceTree = "<group>"; };
 		FC8C707320D212EB002F7672 /* ExampleTodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExampleTodayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -299,6 +305,8 @@
 				FC2B6D8320A2F05E00BF834A /* AppDelegate.h */,
 				FC2B6D8620A2F05E00BF834A /* ViewController.h */,
 				FC2B6D8720A2F05E00BF834A /* ViewController.m */,
+				FC7F661E22EFD72A00D60BCD /* UIButton+Edge.h */,
+				FC7F661F22EFD72A00D60BCD /* UIButton+Edge.m */,
 				FCB2913C20A98257003494FD /* ForceTouch */,
 				FC2B6D8920A2F05E00BF834A /* Main.storyboard */,
 				FC2B6D8C20A2F05F00BF834A /* Assets.xcassets */,
@@ -373,6 +381,8 @@
 			children = (
 				FC5DC71020FDC6AF0055BA63 /* WHStockViewController.h */,
 				FC5DC71120FDC6AF0055BA63 /* WHStockViewController.m */,
+				FC5DC71320FDC9D70055BA63 /* WHStockViewModel.h */,
+				FC5DC71420FDC9D70055BA63 /* WHStockViewModel.m */,
 			);
 			path = Stock;
 			sourceTree = "<group>";
@@ -762,11 +772,13 @@
 				FC632CE920BD4E0500AB1795 /* WHForceTouchCollectionViewCell.m in Sources */,
 				FC632CE620BD4DE600AB1795 /* WHForceTouchSectionController.m in Sources */,
 				FC4BDBBC20C0033B00FBCAAE /* WHImageViewController.m in Sources */,
+				FC5DC71520FDC9D70055BA63 /* WHStockViewModel.m in Sources */,
 				FC5DC71220FDC6AF0055BA63 /* WHStockViewController.m in Sources */,
 				FC710A1920C5411700C00335 /* WHMediator+ImageFlow.m in Sources */,
 				FC76AEBE20C777FE00CB169A /* Target_Other.m in Sources */,
 				FC2B6D9320A2F05F00BF834A /* main.m in Sources */,
 				FCB2914A20A99602003494FD /* WHComponent.m in Sources */,
+				FC7F662022EFD72A00D60BCD /* UIButton+Edge.m in Sources */,
 				FCD10F7520BE964600FAACA2 /* WHForceTouchCollectionReusableView.m in Sources */,
 				FC632CEC20BD514900AB1795 /* WHForceTouch.m in Sources */,
 				FC6EF0F420D0F91700259A75 /* WHSpotLightViewController.m in Sources */,

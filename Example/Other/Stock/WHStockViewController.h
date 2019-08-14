@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface WHStockViewController : UIViewController
+@interface WHStockViewController : WHBaseViewController
+
+@property (nonatomic, strong) NSString *code;
 
 @end
