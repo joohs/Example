@@ -9,13 +9,13 @@
 #ifndef macroDefinition_h
 #define macroDefinition_h
 
-#define isSupportForceTouch  ([UIApplication sharedApplication].delegate.window.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable)
-#define kScreen_Width [UIScreen mainScreen].bounds.size.width
-#define kScreen_Height [UIScreen mainScreen].bounds.size.height
-#define kScreen_Height_All ([UIScreen mainScreen].bounds.size.height + (isiPhoneX?34:0))
-#define isiPhoneX (kScreen_Width == 375 && kScreen_Height == 812)
-#define kStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
-#define kNavigationBarHeight (44+kStatusBarHeight)
-#define todayWidgetUserDefaults @"group.com.wuxiangxiong.todaywidget"
+#define IsSupportForceTouch  ([UIApplication sharedApplication].delegate.window.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable)
+#define KScreen_Width [UIScreen mainScreen].bounds.size.width
+#define KScreen_Height [UIScreen mainScreen].bounds.size.height
+#define KScreen_Height_All ([UIScreen mainScreen].bounds.size.height + (IsiPhoneX?34:0))
+#define IsiPhoneX (KScreen_Width == 375 && KScreen_Height == 812)
+#define KStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+#define KNavigationBarHeight (44+KStatusBarHeight)
+#define TodayWidgetUserDefaults @"group.com.wuxiangxiong.todaywidget"
 
 #endif /* macroDefinition_h */

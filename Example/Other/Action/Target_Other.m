@@ -13,6 +13,8 @@
 #import "WHPreviewLongImageViewController.h"
 #import "WHWebViewController.h"
 #import "WHStockViewController.h"
+#import "WHButtonPositionViewController.h"
+#import "WHAttributedStringViewController.h"
 
 @implementation Target_Other
 
@@ -48,6 +50,16 @@
     if ([params objectForKey:@"code"]) {
         vc.code = params[@"code"];
     }
+    return vc;
+}
+
+- (UIViewController *)Action_Button:(NSDictionary *)params {
+    WHButtonPositionViewController *vc = [[WHButtonPositionViewController alloc] init];
+    return vc;
+}
+
+- (UIViewController *)Action_Attribute:(NSDictionary *)params {
+    WHAttributedStringViewController *vc = [[WHAttributedStringViewController alloc] init];
     return vc;
 }
 

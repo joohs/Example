@@ -15,5 +15,7 @@
 - (UIViewController *)Action_PreViewLongImage:(NSDictionary *)params;
 - (UIViewController *)Action_WebView:(NSDictionary *)params;
 - (UIViewController *)Action_Stock:(NSDictionary *)params;
+- (UIViewController *)Action_Button:(NSDictionary *)params;
+- (UIViewController *)Action_Attribute:(NSDictionary *)params;
 
 @end

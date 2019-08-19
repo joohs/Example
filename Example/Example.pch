@@ -22,15 +22,18 @@
 
 #import "WHBaseViewController.h"
 #import "macroDefinition.h"
-#import "WHMediator+ForceTouch.h"
-#import "WHMediator+ImageFlow.h"
-#import "WHMediator+Other.h"
+
 #import "WHUtils.h"
 #import "WHLabel.h"
 #import "WHButton.h"
 #import "WHBaseModel.h"
 
-
+#pragma Category
+#import "UILabel+AttributedString.h"
+#import "UIButton+Edge.h"
+#import "WHMediator+ForceTouch.h"
+#import "WHMediator+ImageFlow.h"
+#import "WHMediator+Other.h"
 
 #endif
 #endif /* Example_pch */

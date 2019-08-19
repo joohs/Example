@@ -2,8 +2,8 @@
 //  WHUtils.m
 //  Example
 //
-//  Created by Jon on 2018/6/14.
-//  Copyright © 2018年 Jon.wu. All rights reserved.
+//  Created by Jon on 2019/8/17.
+//  Copyright © 2019 Jon.wu. All rights reserved.
 //
 
 #import "WHUtils.h"
@@ -26,6 +26,19 @@
             return vc;
         }
     }
+}
+
+#pragma 找出文本中所有命中的字符串range数组
+- (NSMutableArray *)rangeOfSubString:(NSString *)subString matchString:(NSString *)matchString {
+    NSMutableArray *rangeArray = [NSMutableArray array];
+    for (int i = 0; i < subString.length - matchString.length - 1; i++) {
+        NSString *rangeString = [subString substringWithRange:NSMakeRange(i, matchString.length)];
+        if ([rangeString isEqualToString:matchString]) {
+            NSRange range = NSMakeRange(i, matchString.length);
+            [rangeArray addObject:[NSValue valueWithRange:range]];
+        }
+    }
+    return rangeArray;
 }
 
 @end

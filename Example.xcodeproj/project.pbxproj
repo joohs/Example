@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0701743641A87B49147BC152 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 378CBA10EE87989B260DECC4 /* libPods-Example.a */; };
 		FC1900CB20C789A80035645B /* WHStoreViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1900CA20C789A80035645B /* WHStoreViewModel.m */; };
+		FC28C73A2304FA0400C45C61 /* WHButtonPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC28C7392304FA0400C45C61 /* WHButtonPositionViewController.m */; };
+		FC28C73F2305314100C45C61 /* WHAttributedStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC28C73E2305314100C45C61 /* WHAttributedStringViewController.m */; };
+		FC28C7482307A45100C45C61 /* WHAttributedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC28C7472307A45100C45C61 /* WHAttributedDetailViewController.m */; };
+		FC28C74E2307ACA300C45C61 /* UILabel+AttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = FC28C74D2307ACA300C45C61 /* UILabel+AttributedString.m */; };
+		FC28C7512307ADF900C45C61 /* WHUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FC28C7502307ADF900C45C61 /* WHUtils.m */; };
 		FC2B6D8520A2F05E00BF834A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2B6D8420A2F05E00BF834A /* AppDelegate.m */; };
 		FC2B6D8820A2F05E00BF834A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2B6D8720A2F05E00BF834A /* ViewController.m */; };
 		FC2B6D8B20A2F05E00BF834A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2B6D8920A2F05E00BF834A /* Main.storyboard */; };
@@ -45,7 +50,6 @@
 		FC76AEBE20C777FE00CB169A /* Target_Other.m in Sources */ = {isa = PBXBuildFile; fileRef = FC76AEBD20C777FE00CB169A /* Target_Other.m */; };
 		FC76AEC120C7786700CB169A /* WHMediator+Other.m in Sources */ = {isa = PBXBuildFile; fileRef = FC76AEC020C7786700CB169A /* WHMediator+Other.m */; };
 		FC7F662022EFD72A00D60BCD /* UIButton+Edge.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7F661F22EFD72A00D60BCD /* UIButton+Edge.m */; };
-		FC8C706E20D20458002F7672 /* WHUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8C706D20D20458002F7672 /* WHUtils.m */; };
 		FC8C707520D212EB002F7672 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8C707420D212EB002F7672 /* NotificationCenter.framework */; };
 		FC8C707920D212EB002F7672 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8C707820D212EB002F7672 /* TodayViewController.m */; };
 		FC8C707C20D212EB002F7672 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C707A20D212EB002F7672 /* MainInterface.storyboard */; };
@@ -108,6 +112,17 @@
 		B0723BEEAB751C9F39BC0848 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		FC1900C920C789A80035645B /* WHStoreViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHStoreViewModel.h; sourceTree = "<group>"; };
 		FC1900CA20C789A80035645B /* WHStoreViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHStoreViewModel.m; sourceTree = "<group>"; };
+		FC28C7382304FA0400C45C61 /* WHButtonPositionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHButtonPositionViewController.h; sourceTree = "<group>"; };
+		FC28C7392304FA0400C45C61 /* WHButtonPositionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHButtonPositionViewController.m; sourceTree = "<group>"; };
+		FC28C73D2305314100C45C61 /* WHAttributedStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHAttributedStringViewController.h; sourceTree = "<group>"; };
+		FC28C73E2305314100C45C61 /* WHAttributedStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHAttributedStringViewController.m; sourceTree = "<group>"; };
+		FC28C74523054D5700C45C61 /* TestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestProtocol.h; sourceTree = "<group>"; };
+		FC28C7462307A45100C45C61 /* WHAttributedDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHAttributedDetailViewController.h; sourceTree = "<group>"; };
+		FC28C7472307A45100C45C61 /* WHAttributedDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHAttributedDetailViewController.m; sourceTree = "<group>"; };
+		FC28C74C2307ACA300C45C61 /* UILabel+AttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+AttributedString.h"; sourceTree = "<group>"; };
+		FC28C74D2307ACA300C45C61 /* UILabel+AttributedString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AttributedString.m"; sourceTree = "<group>"; };
+		FC28C74F2307ADF900C45C61 /* WHUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHUtils.h; sourceTree = "<group>"; };
+		FC28C7502307ADF900C45C61 /* WHUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHUtils.m; sourceTree = "<group>"; };
 		FC2B6D8020A2F05E00BF834A /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2B6D8320A2F05E00BF834A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC2B6D8420A2F05E00BF834A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -182,8 +197,6 @@
 		FC76AEC020C7786700CB169A /* WHMediator+Other.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WHMediator+Other.m"; sourceTree = "<group>"; };
 		FC7F661E22EFD72A00D60BCD /* UIButton+Edge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Edge.h"; sourceTree = "<group>"; };
 		FC7F661F22EFD72A00D60BCD /* UIButton+Edge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Edge.m"; sourceTree = "<group>"; };
-		FC8C706C20D20458002F7672 /* WHUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHUtils.h; sourceTree = "<group>"; };
-		FC8C706D20D20458002F7672 /* WHUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHUtils.m; sourceTree = "<group>"; };
 		FC8C707320D212EB002F7672 /* ExampleTodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExampleTodayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8C707420D212EB002F7672 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		FC8C707720D212EB002F7672 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -268,6 +281,56 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FC28C7362304F8B700C45C61 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FC7F661E22EFD72A00D60BCD /* UIButton+Edge.h */,
+				FC7F661F22EFD72A00D60BCD /* UIButton+Edge.m */,
+				FC28C74C2307ACA300C45C61 /* UILabel+AttributedString.h */,
+				FC28C74D2307ACA300C45C61 /* UILabel+AttributedString.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		FC28C7372304F9DA00C45C61 /* ButtonPosition */ = {
+			isa = PBXGroup;
+			children = (
+				FC28C7382304FA0400C45C61 /* WHButtonPositionViewController.h */,
+				FC28C7392304FA0400C45C61 /* WHButtonPositionViewController.m */,
+			);
+			path = ButtonPosition;
+			sourceTree = "<group>";
+		};
+		FC28C73B2304FCE200C45C61 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FC4BDBBE20C0049900FBCAAE /* WHBaseViewController.h */,
+				FC4BDBBF20C0049900FBCAAE /* WHBaseViewController.m */,
+				FC5823A020DA4CC600DE44FF /* WHBaseModel.h */,
+				FC5823A120DA4CC600DE44FF /* WHBaseModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FC28C73C2305310C00C45C61 /* AttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				FC28C73D2305314100C45C61 /* WHAttributedStringViewController.h */,
+				FC28C73E2305314100C45C61 /* WHAttributedStringViewController.m */,
+				FC28C7462307A45100C45C61 /* WHAttributedDetailViewController.h */,
+				FC28C7472307A45100C45C61 /* WHAttributedDetailViewController.m */,
+			);
+			path = AttributedString;
+			sourceTree = "<group>";
+		};
+		FC28C74423054D3100C45C61 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FC28C74523054D5700C45C61 /* TestProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		FC2B6D7720A2F05E00BF834A = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +358,8 @@
 		FC2B6D8220A2F05E00BF834A /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				FC28C73B2304FCE200C45C61 /* Base */,
+				FC2B6D8320A2F05E00BF834A /* AppDelegate.h */,
 				FC2B6D8420A2F05E00BF834A /* AppDelegate.m */,
 				FC64072C20D8D66C00BCD430 /* Kits */,
 				FC8C708B20D24256002F7672 /* Example.entitlements */,
@@ -302,11 +367,8 @@
 				FC4BDBBD20C003F700FBCAAE /* ImageFlow */,
 				FC43448F20AC027000B9D61B /* Test */,
 				FCB2914320A98895003494FD /* WHMediator */,
-				FC2B6D8320A2F05E00BF834A /* AppDelegate.h */,
 				FC2B6D8620A2F05E00BF834A /* ViewController.h */,
 				FC2B6D8720A2F05E00BF834A /* ViewController.m */,
-				FC7F661E22EFD72A00D60BCD /* UIButton+Edge.h */,
-				FC7F661F22EFD72A00D60BCD /* UIButton+Edge.m */,
 				FCB2913C20A98257003494FD /* ForceTouch */,
 				FC2B6D8920A2F05E00BF834A /* Main.storyboard */,
 				FC2B6D8C20A2F05F00BF834A /* Assets.xcassets */,
@@ -315,12 +377,6 @@
 				FC2B6D9220A2F05F00BF834A /* main.m */,
 				FC632CE220BCE37C00AB1795 /* Example.pch */,
 				FC632CE320BCE4CD00AB1795 /* macroDefinition.h */,
-				FC8C706C20D20458002F7672 /* WHUtils.h */,
-				FC8C706D20D20458002F7672 /* WHUtils.m */,
-				FC4BDBBE20C0049900FBCAAE /* WHBaseViewController.h */,
-				FC4BDBBF20C0049900FBCAAE /* WHBaseViewController.m */,
-				FC5823A020DA4CC600DE44FF /* WHBaseModel.h */,
-				FC5823A120DA4CC600DE44FF /* WHBaseModel.m */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -390,10 +446,14 @@
 		FC64072C20D8D66C00BCD430 /* Kits */ = {
 			isa = PBXGroup;
 			children = (
+				FC28C74423054D3100C45C61 /* Protocol */,
+				FC28C7362304F8B700C45C61 /* Category */,
 				FC64072D20D8D68B00BCD430 /* WHLabel.h */,
 				FC64072E20D8D68B00BCD430 /* WHLabel.m */,
 				FC64073020D8D69A00BCD430 /* WHButton.h */,
 				FC64073120D8D69A00BCD430 /* WHButton.m */,
+				FC28C74F2307ADF900C45C61 /* WHUtils.h */,
+				FC28C7502307ADF900C45C61 /* WHUtils.m */,
 			);
 			path = Kits;
 			sourceTree = "<group>";
@@ -432,6 +492,8 @@
 		FC76AEBA20C777B100CB169A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				FC28C73C2305310C00C45C61 /* AttributedString */,
+				FC28C7372304F9DA00C45C61 /* ButtonPosition */,
 				FC5DC70F20FDC6830055BA63 /* Stock */,
 				FCA54D7920E09CC900A7FD46 /* WebView */,
 				FC8C708620D23E4A002F7672 /* LongImage */,
@@ -752,9 +814,11 @@
 				FC4BDBC020C0049900FBCAAE /* WHBaseViewController.m in Sources */,
 				FC2B6D8820A2F05E00BF834A /* ViewController.m in Sources */,
 				FC76AEC120C7786700CB169A /* WHMediator+Other.m in Sources */,
+				FC28C73F2305314100C45C61 /* WHAttributedStringViewController.m in Sources */,
 				FCB2915320A9A941003494FD /* WHMediator+ForceTouch.m in Sources */,
 				FC43449220AC033300B9D61B /* WHWeiboSectionController.m in Sources */,
 				FCB2915020A9A915003494FD /* Target_ForceTouch.m in Sources */,
+				FC28C7512307ADF900C45C61 /* WHUtils.m in Sources */,
 				FC1900CB20C789A80035645B /* WHStoreViewModel.m in Sources */,
 				FCC6CE8C20D8E45700DFB7DE /* WHLongImageCollectionViewCell.m in Sources */,
 				FC58239C20D9F2D700DE44FF /* WHLongImageWithWebViewController.m in Sources */,
@@ -768,7 +832,6 @@
 				FCB2914620A988CA003494FD /* WHMediator.m in Sources */,
 				FC4BDBC320C0050500FBCAAE /* WHImageViewModel.m in Sources */,
 				FC5823A520DA4D0D00DE44FF /* WHLongImage.m in Sources */,
-				FC8C706E20D20458002F7672 /* WHUtils.m in Sources */,
 				FC632CE920BD4E0500AB1795 /* WHForceTouchCollectionViewCell.m in Sources */,
 				FC632CE620BD4DE600AB1795 /* WHForceTouchSectionController.m in Sources */,
 				FC4BDBBC20C0033B00FBCAAE /* WHImageViewController.m in Sources */,
@@ -776,6 +839,7 @@
 				FC5DC71220FDC6AF0055BA63 /* WHStockViewController.m in Sources */,
 				FC710A1920C5411700C00335 /* WHMediator+ImageFlow.m in Sources */,
 				FC76AEBE20C777FE00CB169A /* Target_Other.m in Sources */,
+				FC28C74E2307ACA300C45C61 /* UILabel+AttributedString.m in Sources */,
 				FC2B6D9320A2F05F00BF834A /* main.m in Sources */,
 				FCB2914A20A99602003494FD /* WHComponent.m in Sources */,
 				FC7F662022EFD72A00D60BCD /* UIButton+Edge.m in Sources */,
@@ -783,10 +847,12 @@
 				FC632CEC20BD514900AB1795 /* WHForceTouch.m in Sources */,
 				FC6EF0F420D0F91700259A75 /* WHSpotLightViewController.m in Sources */,
 				FC5823A220DA4CC600DE44FF /* WHBaseModel.m in Sources */,
+				FC28C7482307A45100C45C61 /* WHAttributedDetailViewController.m in Sources */,
 				FC64073220D8D69A00BCD430 /* WHButton.m in Sources */,
 				FC2B6D8520A2F05E00BF834A /* AppDelegate.m in Sources */,
 				FCA54D7820E09CC200A7FD46 /* WHWebViewController.m in Sources */,
 				FC710A1220C53A5B00C00335 /* WHImageModel.m in Sources */,
+				FC28C73A2304FA0400C45C61 /* WHButtonPositionViewController.m in Sources */,
 				FC76AEB920C7778D00CB169A /* WHStoreViewController.m in Sources */,
 				FC43449520AC034900B9D61B /* WHWeiboCollectionReusableView.m in Sources */,
 				FCB2913F20A9827A003494FD /* WHForceTouchViewController.m in Sources */,

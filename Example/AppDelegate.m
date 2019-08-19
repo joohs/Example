@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 #pragma mark - 3DTouch
-    if (isSupportForceTouch) {
+    if (IsSupportForceTouch) {
         [self shortcutItems];
     }
     // Override point for customization after application launch.

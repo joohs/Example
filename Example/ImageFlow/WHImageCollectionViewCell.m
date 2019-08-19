@@ -42,13 +42,13 @@
     }];
     [self.imageView sd_setImageWithURL:url completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
         if (image) {
-            if (image.size.width > kScreen_Width) {
+            if (image.size.width > KScreen_Width) {
                 [self.imageView mas_updateConstraints:^(MASConstraintMaker *make) {
-                    make.width.equalTo(@(kScreen_Width));
-                    make.height.equalTo(@(kScreen_Width*image.size.height/image.size.width));
+                    make.width.equalTo(@(KScreen_Width));
+                    make.height.equalTo(@(KScreen_Width*image.size.height/image.size.width));
                 }];
                 if ([self.delegate respondsToSelector:@selector(delegateReSetSize:)]) {
-                    [self.delegate delegateReSetSize:CGSizeMake(kScreen_Width, kScreen_Width*image.size.height/image.size.width)];
+                    [self.delegate delegateReSetSize:CGSizeMake(KScreen_Width, KScreen_Width*image.size.height/image.size.width)];
                 }
             }else {
                 [self.imageView mas_updateConstraints:^(MASConstraintMaker *make) {

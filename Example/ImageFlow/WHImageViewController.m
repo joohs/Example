@@ -68,7 +68,7 @@
 }
 
 - (void)viewDidLayoutSubviews {
-    self.collectionView.frame = CGRectMake(0, kNavigationBarHeight, kScreen_Width, kScreen_Height_All-kNavigationBarHeight);
+    self.collectionView.frame = CGRectMake(0, KNavigationBarHeight, KScreen_Width, KScreen_Height_All-KNavigationBarHeight);
 }
 
 - (void)didReceiveMemoryWarning {

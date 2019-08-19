@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, kNavigationBarHeight, kScreen_Width, kScreen_Height_All-kNavigationBarHeight)];
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, KNavigationBarHeight, KScreen_Width, KScreen_Height_All-KNavigationBarHeight)];
     self.webView.delegate = self;
     [self.view addSubview:self.webView];
     [self loadWebViewWithPasteboard];

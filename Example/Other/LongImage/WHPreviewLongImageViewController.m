@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreen_Width, kScreen_Height)];
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, KScreen_Width, KScreen_Height)];
     [self.view addSubview:self.scrollView];
     
     self.imageView = [[UIImageView alloc] init];
@@ -29,7 +29,7 @@
         [self.imageView sizeToFit];
     }
     [self.scrollView addSubview:self.imageView];
-    self.scrollView.contentSize = CGSizeMake(kScreen_Width, self.imageView.height);
+    self.scrollView.contentSize = CGSizeMake(KScreen_Width, self.imageView.height);
 }
 
 - (void)didReceiveMemoryWarning {

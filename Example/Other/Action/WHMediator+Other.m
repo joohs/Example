@@ -58,4 +58,20 @@
     return nil;
 }
 
+- (UIViewController *)WHComponentOther_fetchButtonPositionViewController:(NSDictionary *)params {
+    UIViewController *vc = [self performTarget:@"Other" action:@"Button" params:params shouldCacheTarget:self];
+    if ([vc isKindOfClass:[UIViewController class]]) {
+        return vc;
+    }
+    return nil;
+}
+
+- (UIViewController *)WHComponentOther_fetchAttributeViewController:(NSDictionary *)params {
+    UIViewController *vc = [self performTarget:@"Other" action:@"Attribute" params:params shouldCacheTarget:self];
+    if ([vc isKindOfClass:[UIViewController class]]) {
+        return vc;
+    }
+    return nil;
+}
+
 @end

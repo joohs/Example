@@ -36,17 +36,22 @@
     [self example];
     self.title = @"模块";
     // Do any additional setup after loading the view, typically from a nib.
-    self.dataArray = @[@"3DTouch", @"SpotLight", @"图片流", @"App Store评分", @"长图生成", @"获取指定股票实时动态"];
+    self.dataArray = @[@"3DTouch", @"SpotLight", @"图片流", @"App Store评分", @"长图生成", @"获取指定股票实时动态", @"Button图片位置", @"iOS富文本"];
     [self registerForPreviewingWithDelegate:self sourceView:self.view];
     // Do any additional setup after loading the view.
-    self.listTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreen_Width, kScreen_Height_All-kNavigationBarHeight) style:UITableViewStyleGrouped];
+    self.listTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, KScreen_Width, KScreen_Height_All-KNavigationBarHeight) style:UITableViewStyleGrouped];
     [self.view addSubview:self.listTableView];
     self.listTableView.delegate = self;
     self.listTableView.dataSource = self;
     [self.listTableView reloadData];
 #pragma mark - 传给todayWidget的参数
-    NSUserDefaults *userDefault = [[NSUserDefaults alloc] initWithSuiteName:todayWidgetUserDefaults];
-    [userDefault setObject:todayWidgetUserDefaults forKey:@"girlImage"];
+    NSUserDefaults *userDefault = [[NSUserDefaults alloc] initWithSuiteName:TodayWidgetUserDefaults];
+    [userDefault setObject:TodayWidgetUserDefaults forKey:@"girlImage"];
+    
+    
+    
+    NSRange range = [@"我就是我" rangeOfString:@"我"];
+    NSLog(@"%d %d", range.length, range.location);
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -98,6 +103,16 @@
         case 5:
         {
             vc = [[WHMediator sharedInstance] WHComponentOther_fetchStockViewController:nil];
+        }
+            break;
+        case 6:
+        {
+            vc = [[WHMediator sharedInstance] WHComponentOther_fetchButtonPositionViewController:nil];
+        }
+            break;
+        case 7:
+        {
+            vc = [[WHMediator sharedInstance] WHComponentOther_fetchAttributeViewController:nil];
         }
             break;
         default:

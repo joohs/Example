@@ -56,13 +56,13 @@
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(@(5));
         make.top.equalTo(self.imageButton.mas_bottom).offset(10);
-        make.width.equalTo(@(kScreen_Width/2-10));
+        make.width.equalTo(@(KScreen_Width/2-10));
         make.height.equalTo(@(80));
     }];
     [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(@(kScreen_Width/2+5));
+        make.left.equalTo(@(KScreen_Width/2+5));
         make.top.equalTo(@(15));
-        make.width.equalTo(@(kScreen_Width/2-10));
+        make.width.equalTo(@(KScreen_Width/2-10));
         make.height.equalTo((@(130)));
     }];
 }

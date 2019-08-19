@@ -24,7 +24,7 @@
     [label sizeToFit];
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(@(20));
-        make.top.equalTo(@(kNavigationBarHeight+10));
+        make.top.equalTo(@(KNavigationBarHeight+10));
         make.right.equalTo(@(-20));
     }];
     

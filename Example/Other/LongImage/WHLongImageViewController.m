@@ -51,7 +51,7 @@
 }
 
 - (void)viewDidLayoutSubviews {
-    self.collectionView.frame = CGRectMake(0, 0, kScreen_Width, kScreen_Height_All);
+    self.collectionView.frame = CGRectMake(0, 0, KScreen_Width, KScreen_Height_All);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,7 +62,7 @@
 - (void)showPopView:(UIBarButtonItem *)item {
     PopoverView *view = [PopoverView popoverView];
     view.style = PopoverViewStyleDark;
-    [view showToPoint:CGPointMake(kScreen_Width-20, kNavigationBarHeight) withActions:[self actionPopView]];
+    [view showToPoint:CGPointMake(KScreen_Width-20, KNavigationBarHeight) withActions:[self actionPopView]];
 }
 
 - (NSArray *)actionPopView {

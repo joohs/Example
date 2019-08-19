@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, kNavigationBarHeight, kScreen_Width, kScreen_Height-kNavigationBarHeight)];
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, KNavigationBarHeight, KScreen_Width, KScreen_Height-KNavigationBarHeight)];
     [self.view addSubview:self.imageView];
     self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.imageView sd_setImageWithURL:self.imageUrl completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
